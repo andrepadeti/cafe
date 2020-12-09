@@ -16,7 +16,7 @@ const Map = ({ location, zoomLevel }) => (
   <Fade>
     <div className="google-map">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_API_KEY }}
+        bootstrapURLKeys={{ key: process.env.GATSBY_MAPS }}
         defaultCenter={location}
         defaultZoom={zoomLevel}
       >
