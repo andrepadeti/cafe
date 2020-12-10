@@ -55,9 +55,7 @@ const Menu = () => {
       <div className="container mb-5" id="menu">
         <div className="row">
           <div className="col-md-8 mx-auto">
-            <Slide>
-              <Title text="MENU" />
-            </Slide>
+            <Title text="Menu" />
 
             <div className="card">
               <div

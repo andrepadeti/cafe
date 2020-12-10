@@ -21,9 +21,8 @@ const Hero = () => {
       <div className="hero">
         <div className="hours">Aberto das 6 às 17</div>
 
-        <div className="title display-1">
+        <div className="title text-white text-center display-1">
           <Zoom>Café</Zoom>
-          {/* <br /> */}
           <Zoom>Campestre</Zoom>
         </div>
         <div className="address">Rua Vitória Régia, 1300</div>

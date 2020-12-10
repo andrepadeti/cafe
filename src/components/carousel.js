@@ -41,7 +41,7 @@ const Carousel = () => {
         <li data-target="#foodCarousel" data-slide-to="1"></li>
         <li data-target="#foodCarousel" data-slide-to="2"></li>
       </ol>
-      <div className="carousel-inner" style={{ height: '80vh' }}>
+      <div className="carousel-inner" >
         <div className="carousel-item h-100 active">
           <Img fluid={data.food1.childImageSharp.fluid} className="img-fluid" />
           <div class="carousel-caption d-none d-md-block backdrop-filter pb-2 px-0 mb-4">

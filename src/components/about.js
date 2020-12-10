@@ -4,7 +4,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Fade from 'react-reveal/Fade'
-import Slide from 'react-reveal/Slide'
 import Title from './title'
 
 const About = () => {
@@ -24,9 +23,7 @@ const About = () => {
     <div className="container mb-5" id="about">
       <div className="row">
         <div className="col-md-8 mx-auto">
-          <Slide>
-            <Title text="QUEM SOMOS" />
-          </Slide>
+          <Title text="Quem Somos" />
           <p>
             O Café Campestre nasceu para trazer aos Campestrinos o melhor café
             da cidade. Aqui você vai encontrar um espaço agradável para relaxar,
@@ -52,7 +49,7 @@ const About = () => {
             </blockquote>
           </div>
           <Fade>
-            <Img fluid={data.about.childImageSharp.fluid} className='mb-3' />
+            <Img fluid={data.about.childImageSharp.fluid} className="mb-3" />
           </Fade>
           <p>
             <strong>Nosso horário:</strong> diariamente das 6 às 17.

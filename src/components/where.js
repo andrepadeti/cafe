@@ -14,7 +14,7 @@ const Where = () => {
       <div className="container" id="where">
         <div className="row">
           <div className="col-md-8 mx-auto">
-            <Title text="LOCALIZAÇÃO" />
+            <Title text="Localização" />
             <p>No local mais elegante do bairro.</p>
             <Map location={location} zoomLevel={17} />
           </div>
