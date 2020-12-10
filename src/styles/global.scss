@@ -133,3 +133,7 @@ a:hover {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.backdrop-filter {
+  backdrop-filter: blur(10px);
+}

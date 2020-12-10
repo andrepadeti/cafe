@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 
-import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
-
 import Title from './title'
 import Fade from 'react-reveal/Fade'
+import Carousel from './carousel'
 import Slide from 'react-reveal/Slide'
 
 const Food = () => {
@@ -52,18 +50,6 @@ const Drinks = () => {
 const Menu = () => {
   const [food, setFood] = useState(true)
 
-  const data = useStaticQuery(graphql`
-    query MyQuery {
-      menu: file(relativePath: { eq: "coffeehouse2.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <div className="container mb-5" id="menu">
@@ -102,7 +88,7 @@ const Menu = () => {
               {food ? <Food /> : <Drinks />}
             </div>
             <Fade>
-              <Img fluid={data.menu.childImageSharp.fluid} />
+              <Carousel />
             </Fade>
           </div>
         </div>
