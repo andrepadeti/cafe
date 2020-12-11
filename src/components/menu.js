@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 
 import Title from './title'
 import Fade from 'react-reveal/Fade'
+import Bounce from 'react-reveal/Bounce'
 import Carousel from './carousel'
-import Slide from 'react-reveal/Slide'
 
 const Food = () => {
   return (
-    <>
+    <Bounce>
       <h5>Cesta de pães</h5>
       <p>Variedade de pães de fruta frescos e bolinhos 14.50</p>
 
@@ -22,13 +22,13 @@ const Food = () => {
 
       <h5>Panqueca</h5>
       <p>Panqueca de morango com muuuitos morangos 8.50</p>
-    </>
+    </Bounce>
   )
 }
 
 const Drinks = () => {
   return (
-    <>
+    <Bounce>
       <h5>Café</h5>
       <p>Cafézinho 2.50</p>
 
@@ -43,7 +43,7 @@ const Drinks = () => {
 
       <h5>Refrigerante</h5>
       <p>Coca-cola, Sprite, Fanta, etc. 2.50</p>
-    </>
+    </Bounce>
   )
 }
 
@@ -68,7 +68,7 @@ const Menu = () => {
                   className={`btn ${food ? 'btn-secondary' : 'btn-light'}`}
                   aria-pressed="true"
                   onClick={() => setFood(true)}
-                  onKeyDown={() => setFood(true)}
+                  onKeyPress={e => e.value === 'Enter' && setFood(true)}
                 >
                   Comidas
                 </button>
@@ -76,13 +76,13 @@ const Menu = () => {
                   type="button"
                   className={`btn ${food ? 'btn-light' : 'btn-secondary'}`}
                   onClick={() => setFood(false)}
-                  onKeyDown={() => setFood(false)}
+                  onKeyPress={e => e.value === 'Enter' && setFood(false)}
                 >
                   Bebidas
                 </button>
               </div>
             </div>
-            <div className="shadow p-4 mb-5">
+            <div className="shadow p-4 mb-5 text-center">
               {food ? <Food /> : <Drinks />}
             </div>
             <Fade>

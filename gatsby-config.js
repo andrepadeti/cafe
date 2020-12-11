@@ -29,7 +29,7 @@ module.exports = {
     },
 
     `gatsby-plugin-offline`,
-    `gatsby-plugin-sharp`, 
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -38,5 +38,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-smoothscroll`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `dancing script`,
+          `lato`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    }
   ],
 }

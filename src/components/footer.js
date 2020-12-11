@@ -20,13 +20,13 @@ const Footer = () => {
 
       <div className="row pt-3 bg-secondary text-white justify-content-center">
         <div className="col-md-4 col-sm-12 pl-5 mb-4 mb-md-0">
-          <h6>CAFÉ CAMPESTRE</h6>
+          <h5 className='handwriting'>Café Campestre</h5>
           <hr style={{ width: '60px' }} />
           <p>O melhor café da cidade bem pertinho de você.</p>
         </div>
 
         <div className="col-md-4 col-sm-12 pl-5">
-          <h6>CONTATO</h6>
+          <h5>Contato</h5>
           <hr style={{ width: '60px' }} />
           <p>
             <FontAwesomeIcon icon={['fa', 'building']} className="mr-2" />

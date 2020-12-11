@@ -5,7 +5,9 @@ const Title = ({ text }) => {
   return (
     <Slide>
       <div className="text-center mb-4">
-        <h5 className="text-white text-uppercase bg-dark px-2 py-1 d-inline">{text}</h5>
+        <h3 className="handwriting  px-3 py-1 fw-bolder">
+          {text}
+        </h3>
       </div>
     </Slide>
   )

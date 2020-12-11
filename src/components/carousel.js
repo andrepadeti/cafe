@@ -41,24 +41,24 @@ const Carousel = () => {
         <li data-target="#foodCarousel" data-slide-to="1"></li>
         <li data-target="#foodCarousel" data-slide-to="2"></li>
       </ol>
-      <div className="carousel-inner" >
+      <div className="carousel-inner">
         <div className="carousel-item h-100 active">
           <Img fluid={data.food1.childImageSharp.fluid} className="img-fluid" />
-          <div class="carousel-caption d-none d-md-block backdrop-filter pb-2 px-0 mb-4">
+          <div class="carousel-caption d-none d-md-block opaque pb-2 px-0 mb-4">
             <h5>Campestre Exclusivo</h5>
             <p>Bolo de chocolate com o exclusivo Café Campestre</p>
           </div>
         </div>
         <div className="carousel-item h-100">
           <Img fluid={data.food2.childImageSharp.fluid} />
-          <div class="carousel-caption d-none d-md-block backdrop-filter pb-2 px-0 mb-4">
+          <div class="carousel-caption d-none d-md-block opaque pb-2 px-0 mb-4">
             <h5>Croissant Campestre</h5>
             <p>Delicioso croissant com queijo brie</p>
           </div>
         </div>
         <div className="carousel-item h-100">
           <Img fluid={data.food3.childImageSharp.fluid} className="img-fluid" />
-          <div class="carousel-caption d-none d-md-block backdrop-filter pb-2 px-0 mb-4">
+          <div class="carousel-caption d-none d-md-block opaque pb-2 px-0 mb-4">
             <h5>Talharim Clássico</h5>
             <p>Talharim com tomates frescos</p>
           </div>

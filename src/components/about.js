@@ -24,18 +24,18 @@ const About = () => {
       <div className="row">
         <div className="col-md-8 mx-auto">
           <Title text="Quem Somos" />
-          <p>
+          <p className="text-justify">
             O Café Campestre nasceu para trazer aos Campestrinos o melhor café
             da cidade. Aqui você vai encontrar um espaço agradável para relaxar,
             encontrar amigos e fazer home office de um lugar aconchegante.
           </p>
-          <p>
+          <p className="text-justify">
             Além do nosso delicioso exclusivo Espresso Campestre e outros
             excelentes cafés, nós também servimos café da manhã e sanduíches
             feitos na hora, e também temos uma seleção de saladas e outras
             coisinhas bem gostosas.
           </p>
-          <div className="leftbar">
+          <div className="leftbar p-3 mb-5">
             <blockquote className="blockquote">
               <p>
                 <em>
@@ -43,7 +43,7 @@ const About = () => {
                   é o novo açucar."
                 </em>
               </p>
-              <footer className="blockquote-footer">
+              <footer className="blockquote-footer text-center">
                 <cite>Paulo Almeida.</cite> Especialista em café e dono.
               </footer>
             </blockquote>

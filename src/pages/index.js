@@ -4,7 +4,6 @@ import '../styles/global.scss'
 import Fade from 'react-reveal/Fade'
 
 import SEO from '../components/seo'
-import Navigation from '../components/navigation'
 import Hero from '../components/hero'
 import About from '../components/about'
 import Menu from '../components/menu'
@@ -17,9 +16,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 //   faFacebookSquare,
 //   faInstagramSquare,
 // } from '@fortawesome/free-brands-svg-icons'
-import {
-  fab
-} from '@fortawesome/free-brands-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 import {
   faCoffee,
   faHeartBroken,
@@ -27,14 +24,7 @@ import {
   faBuilding,
   faPhone,
 } from '@fortawesome/free-solid-svg-icons'
-library.add(
-  faCoffee,
-  faHeartBroken,
-  faEnvelope,
-  faBuilding,
-  faPhone,
-  fab,
-)
+library.add(faCoffee, faHeartBroken, faEnvelope, faBuilding, faPhone, fab)
 
 const Home = () => {
   return (
@@ -43,9 +33,8 @@ const Home = () => {
         title="Café Campestre"
         description="O melhor café da cidade bem pertinho de você"
       />
-      <Navigation />
       <Fade>
-        <Hero />
+        <Hero /> {/*includes navigation bar*/}
         <About />
         <Menu />
         <Where />

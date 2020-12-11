@@ -3,10 +3,10 @@ import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const Navigation = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-2">
-      <a className="navbar-brand" href="#home">
+    <nav className="navbar navbar-expand-lg navbar-dark p-2 opaque">
+      {/* <a className="navbar-brand handwriting" href="#home">
         Café Campestre
-      </a>
+      </a> */}
       <button
         className="navbar-toggler"
         type="button"
@@ -20,13 +20,13 @@ const Navigation = () => {
       </button>
 
       <div
-        className="collapse navbar-collapse justify-content-end"
+        className="collapse navbar-collapse"
         id="navbarSupportedContent"
       >
-        <ul className="navbar-nav mr-auto">
-          <li className="nav-item">
+        <ul className="navbar-nav w-100 d-flex justify-content-evenly">
+          <li className="nav-item cursor-pointer">
             <span
-              className="nav-link cursor-pointer"
+              className="nav-link"
               onClick={() => scrollTo('#home')}
               onKeyPress={e => (e.key === 'Enter' ? scrollTo('#home') : null)}
               role="button"

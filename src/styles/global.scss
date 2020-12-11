@@ -15,33 +15,26 @@ a:hover {
   background-size: cover;
   filter: grayscale(50%);
   height: max(150px, 50vh);
-  margin-bottom: 3rem;
-
-  // flex container:
-  display: flex;
-  justify-content: space-between;
 }
 
 .hours {
-  background-color: #000;
-  color: #fff;
   font-size: min(max(0.5rem, 1.5vw), 1rem);
-
-  // flex item:
-  align-self: flex-end;
-  margin: 1rem;
   padding: 0.2rem 0.8rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .hours,
-  .address {
-    display: none;
-  }
+.title {
+  font-size: min(max(1rem, 8vw), 80px);
+  font-family: 'Dancing Script';
+}
 
+.address {
+  font-size: min(max(0.5rem, 1.5vw), 1rem);
+  padding: 0.2rem 0.8rem;
+}
+
+@media (max-width: 577px) {
   .hero {
     height: max(150px, 30vh);
-    justify-content: center;
   }
 
   .google-map {
@@ -51,7 +44,7 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 601px) {
+@media (min-width: 576px) {
   .google-map {
     height: 70vh;
     width: 100%;
@@ -59,27 +52,8 @@ a:hover {
   }
 }
 
-.title {
-  font-size: min(max(1rem, 8vw), 80px);
-
-  // flex item:
-  align-self: center;
-}
-
-.address {
-  color: #fff;
-  font-size: min(max(0.5rem, 1.5vw), 1rem);
-
-  // flex item:
-  align-self: flex-end;
-  margin: 1rem;
-  padding: 0.2rem 0.8rem;
-}
-
 .leftbar {
   border-left: 6px solid #ccc;
-  padding: 1rem;
-  margin-bottom: 2rem;
   color: #000;
   background-color: #f1f1f1;
 }
@@ -101,4 +75,17 @@ a:hover {
 
 .backdrop-filter {
   backdrop-filter: blur(10px);
+}
+
+.opaque {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.handwriting {
+  font-family: 'Dancing Script';
+}
+
+.text-justify {
+  text-align: justify;
+  text-justify: auto;
 }
