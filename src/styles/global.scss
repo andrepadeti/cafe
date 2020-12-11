@@ -69,6 +69,15 @@ a:hover {
   color: red;
 }
 
+.scroll-up {
+  color: cadetblue;
+  // positioning
+  z-index: 2;
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

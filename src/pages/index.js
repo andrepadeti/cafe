@@ -9,6 +9,7 @@ import About from '../components/about'
 import Menu from '../components/menu'
 import Where from '../components/where'
 import Footer from '../components/footer'
+import ScrollUp from '../components/scrollUp'
 
 // font awesome initialization
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -23,8 +24,19 @@ import {
   faEnvelope,
   faBuilding,
   faPhone,
+  faArrowUp,
+  faChevronCircleUp,
 } from '@fortawesome/free-solid-svg-icons'
-library.add(faCoffee, faHeartBroken, faEnvelope, faBuilding, faPhone, fab)
+library.add(
+  faCoffee,
+  faHeartBroken,
+  faEnvelope,
+  faBuilding,
+  faPhone,
+  faArrowUp,
+  faChevronCircleUp,
+  fab
+)
 
 const Home = () => {
   return (
@@ -40,6 +52,7 @@ const Home = () => {
         <Where />
       </Fade>
       <Footer />
+      <ScrollUp showBelow={250} />
     </>
   )
 }
