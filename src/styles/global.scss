@@ -10,11 +10,15 @@ a:hover {
   color: grey;
 }
 
+.nav-item:hover {
+  color: grey;
+}
+
 .hero {
   background-position: center;
   background-size: cover;
   filter: grayscale(50%);
-  height: max(150px, 50vh);
+  height: max(150px, 90vh);
 }
 
 .hours {
@@ -34,7 +38,7 @@ a:hover {
 
 @media (max-width: 577px) {
   .hero {
-    height: max(150px, 30vh);
+    height: max(150px, 60vh);
   }
 
   .google-map {
@@ -70,7 +74,8 @@ a:hover {
 }
 
 .scroll-up {
-  color: cadetblue;
+  mix-blend-mode: screen;
+  
   // positioning
   z-index: 2;
   position: fixed;

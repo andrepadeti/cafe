@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const ScrollUp = ({ showBelow }) => {
   const [show, setShow] = useState(showBelow ? false : true)
@@ -13,7 +14,7 @@ const ScrollUp = ({ showBelow }) => {
   }
 
   const handleClick = () => {
-    window[`scrollTo`]({ top: 0, behavior: `smooth` })
+    scrollTo('#navigation')
   }
 
   useEffect(() => {
@@ -26,16 +27,15 @@ const ScrollUp = ({ showBelow }) => {
   return (
     <div>
       {show && (
-        // <div className="scroll-up backdrop-filter">
-          <FontAwesomeIcon
+        <FontAwesomeIcon
           className="scroll-up"
-            icon={['fa', 'chevron-circle-up']}
-            size="4x"
-            onClick={handleClick}
-            onKeyPress={e => (e.value = 'Enter' ? handleClick : null)}
-            aria-label="to top"
-          />
-        // </div>
+          icon={['fa', 'chevron-circle-up']}
+          size="4x"
+          onClick={handleClick}
+          onKeyPress={e => (e.value = 'Enter' ? handleClick : null)}
+          aria-label="subir ao topo da página"
+          tabIndex={0}
+        />
       )}
     </div>
   )

@@ -8,6 +8,10 @@ const location = {
   lng: -46.54747183442259,
 }
 
+// google maps zoom level depends on whether mobile or desktop
+const mql = window.matchMedia(`(max-width: 577px)`)
+const zoomLevel = mql.matches ? 15 : 17
+
 const Where = () => {
   return (
     <>
@@ -16,7 +20,7 @@ const Where = () => {
           <div className="col-md-8 mx-auto">
             <Title text="Localização" />
             <p>No local mais elegante do bairro.</p>
-            <Map location={location} zoomLevel={17} />
+            <Map location={location} zoomLevel={zoomLevel} />
           </div>
         </div>
       </div>

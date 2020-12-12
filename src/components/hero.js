@@ -2,7 +2,7 @@ import React from 'react'
 import Zoom from 'react-reveal/Zoom'
 import { useStaticQuery, graphql } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
-import Navigation from '../components/navigation'
+import Navigation from './navigation'
 
 const Hero = () => {
   const data = useStaticQuery(graphql`

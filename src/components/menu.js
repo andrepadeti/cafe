@@ -2,12 +2,11 @@ import React, { useState } from 'react'
 
 import Title from './title'
 import Fade from 'react-reveal/Fade'
-import Bounce from 'react-reveal/Bounce'
 import Carousel from './carousel'
 
 const Food = () => {
   return (
-    <Bounce>
+    <Fade>
       <h5>Cesta de pães</h5>
       <p>Variedade de pães de fruta frescos e bolinhos 14.50</p>
 
@@ -22,13 +21,13 @@ const Food = () => {
 
       <h5>Panqueca</h5>
       <p>Panqueca de morango com muuuitos morangos 8.50</p>
-    </Bounce>
+    </Fade>
   )
 }
 
 const Drinks = () => {
   return (
-    <Bounce>
+    <Fade>
       <h5>Café</h5>
       <p>Cafézinho 2.50</p>
 
@@ -43,7 +42,7 @@ const Drinks = () => {
 
       <h5>Refrigerante</h5>
       <p>Coca-cola, Sprite, Fanta, etc. 2.50</p>
-    </Bounce>
+    </Fade>
   )
 }
 
