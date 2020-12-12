@@ -27,7 +27,8 @@ a:hover {
 }
 
 .title {
-  font-size: min(max(1rem, 8vw), 80px);
+  // font-size: min(max(1rem, 8vw), 120px);
+  font-size: min(max(1rem, 20vw), 120px);
   font-family: 'Dancing Script';
 }
 
@@ -75,7 +76,7 @@ a:hover {
 
 .scroll-up {
   mix-blend-mode: screen;
-  
+
   // positioning
   z-index: 2;
   position: fixed;

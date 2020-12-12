@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Map from './map'
 import Title from './title'
 
@@ -8,11 +8,17 @@ const location = {
   lng: -46.54747183442259,
 }
 
-// google maps zoom level depends on whether mobile or desktop
-const mql = window.matchMedia(`(max-width: 577px)`)
-const zoomLevel = mql.matches ? 15 : 17
-
 const Where = () => {
+  const [ zoomLevel, setZoomLevel ] = useState()
+  // in gatsby, window is not defined in production build, therefore:
+  useEffect(() => {
+    if (typeof window != `undefined`) {
+      // google maps zoom level depends on whether mobile or desktop
+      const mediaQuery = window.matchMedia(`(max-width: 577px)`)
+      setZoomLevel(mediaQuery.matches ? 15 : 17)
+    }
+  },[])
+
   return (
     <>
       <div className="container" id="where">
