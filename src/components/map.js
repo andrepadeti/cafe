@@ -7,7 +7,7 @@ const LocationPin = ({ text }) => {
   return (
     <div className="map-pin">
       <FontAwesomeIcon icon="coffee" />
-      <p>{text}</p>
+      <p className='backdrop-filter d-inline-block'>{text}</p>
     </div>
   )
 }

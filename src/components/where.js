@@ -3,13 +3,13 @@ import Map from './map'
 import Title from './title'
 
 const location = {
-  text: 'Café Campestre',
-  lat: -23.632035336728777,
-  lng: -46.54747183442259,
+  text: 'Soderinni Gourmet',
+  lat: -23.631975801212228,
+  lng: -46.54757678944422,
 }
 
 const Where = () => {
-  const [ zoomLevel, setZoomLevel ] = useState()
+  const [zoomLevel, setZoomLevel] = useState()
   // in gatsby, window is not defined in production build, therefore:
   useEffect(() => {
     if (typeof window != `undefined`) {
@@ -17,13 +17,13 @@ const Where = () => {
       const mediaQuery = window.matchMedia(`(max-width: 577px)`)
       setZoomLevel(mediaQuery.matches ? 15 : 17)
     }
-  },[])
+  }, [])
 
   return (
     <>
       <div className="container" id="where">
         <div className="row">
-          <div className="col-md-8 mx-auto">
+          <div className="col-11 col-md-8 mx-auto py-2 mb-5 bg-light rounded shadow">
             <Title text="Localização" />
             <p>No local mais elegante do bairro.</p>
             <Map location={location} zoomLevel={zoomLevel} />

@@ -45,8 +45,8 @@ const Carousel = () => {
         <div className="carousel-item h-100 active">
           <Img fluid={data.food1.childImageSharp.fluid} className="img-fluid" />
           <div className="carousel-caption d-none d-md-block opaque pb-2 px-0 mb-4">
-            <h5>Campestre Exclusivo</h5>
-            <p>Bolo de chocolate com o exclusivo Café Campestre</p>
+            <h5>Soderinni Exclusivo</h5>
+            <p>Bolo de chocolate com o exclusivo Café Soderinni</p>
           </div>
         </div>
         <div className="carousel-item h-100">

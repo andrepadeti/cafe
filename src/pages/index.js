@@ -9,7 +9,7 @@ import About from '../components/about'
 import Menu from '../components/menu'
 import Where from '../components/where'
 import Footer from '../components/footer'
-import ScrollUp from '../components/scrollUp'
+// import ScrollUp from '../components/scrollUp'
 
 // font awesome initialization
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -42,8 +42,8 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Café Campestre"
-        description="O melhor café da cidade bem pertinho de você"
+        title="Home"
+        description="Festas | Corporativos | Aniversários | Casamentos | Almoços | Jantares | Finger Food | Coffee Break | Doces Finos | Bem Casados | Gifts para Eventos"
       />
       <Fade>
         <Hero /> {/*includes navigation bar*/}
@@ -52,7 +52,7 @@ const Home = () => {
         <Where />
       </Fade>
       <Footer />
-      <ScrollUp showBelow={250} />
+      {/* <ScrollUp showBelow={250} /> */}
     </>
   )
 }

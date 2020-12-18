@@ -22,29 +22,28 @@ const About = () => {
   return (
     <div className="container mb-5" id="about">
       <div className="row">
-        <div className="col-md-8 mx-auto">
+        <div className="col-11 col-md-8 mx-auto py-2 bg-light rounded shadow">
           <Title text="Quem Somos" />
           <p className="text-justify">
-            O Café Campestre nasceu para trazer aos Campestrinos o melhor café
-            da cidade. Aqui você vai encontrar um espaço agradável para relaxar,
-            encontrar amigos e fazer home office de um lugar aconchegante.
+            O Soderinni Gourmet nasceu para trazer aos Campestrinos o melhor
+            café da cidade. Aqui você vai encontrar um espaço agradável para
+            relaxar, encontrar os amigos e fazer uma pausa no home office em um
+            lugar aconchegante.
           </p>
           <p className="text-justify">
-            Além do nosso delicioso exclusivo Espresso Campestre e outros
-            excelentes cafés, nós também servimos café da manhã e sanduíches
-            feitos na hora, e também temos uma seleção de saladas e outras
-            coisinhas bem gostosas.
+            Nosso buffet também organiza festas, corporativos, casamentos,
+            almoços, jantares, finger food, coffee break, doces finos, bem
+            casados e gifts para eventos.
           </p>
           <div className="leftbar p-3 mb-5">
-            <blockquote className="blockquote">
+            <blockquote className="blockquote text-center">
               <p>
                 <em>
-                  "Minha maior preocupação é oferecer produtos frescos. Frescor
-                  é o novo açucar."
+                  "Todos os produtos do nosso café são produzidos aqui."
                 </em>
               </p>
               <footer className="blockquote-footer text-center">
-                <cite>Paulo Almeida.</cite> Especialista em café e dono.
+                <cite>Milena Sodero.</cite> Especialista em café.
               </footer>
             </blockquote>
           </div>
@@ -52,9 +51,9 @@ const About = () => {
             <Img fluid={data.about.childImageSharp.fluid} className="mb-3" />
           </Fade>
           <p>
-            <strong>Nosso horário:</strong> diariamente das 6 às 17.
+            <strong>Nosso horário:</strong> terça à sexta das 12h às 20h, sábado e domingo das 8h às 16h.
             <br />
-            <strong>Endereço:</strong> Vitória Régia, 1300.
+            <strong>Endereço:</strong> Vitória Régia, 1409.
           </p>
         </div>
       </div>

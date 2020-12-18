@@ -1,4 +1,30 @@
 @charset "utf-8";
+@import "bootstrap/scss/bootstrap.scss";
+
+$green: rgb(157, 211, 175);
+$dark-green: #285a6c;
+$pink: #d89292;
+
+$mynewcolor: $dark-green;
+.btn-primary {
+  @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+}
+
+.btn-outline-primary {
+  @include button-outline-variant($mynewcolor, #222222, lighten($mynewcolor,5%), $mynewcolor);
+}
+
+.bg-green {
+  background-color: $green;
+}
+
+.bg-dark-green {
+  background-color: $dark-green;
+}
+
+body {
+  background-color: $green;
+}
 
 a {
   cursor: pointer;
@@ -17,8 +43,12 @@ a:hover {
 .hero {
   background-position: center;
   background-size: cover;
-  filter: grayscale(50%);
   height: max(150px, 90vh);
+}
+
+.hero-img {
+  // height: max(150px, 90vh);
+  background-blend-mode: darken;
 }
 
 .hours {
@@ -27,9 +57,8 @@ a:hover {
 }
 
 .title {
-  // font-size: min(max(1rem, 8vw), 120px);
   font-size: min(max(1rem, 20vw), 120px);
-  font-family: 'Dancing Script';
+  // font-size: min(min(30vh, 30vw), 120px);
 }
 
 .address {
@@ -45,7 +74,7 @@ a:hover {
   .google-map {
     height: 40vh;
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -53,20 +82,14 @@ a:hover {
   .google-map {
     height: 70vh;
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
 }
 
 .leftbar {
-  border-left: 6px solid #ccc;
+  border-left: 6px solid $pink;
   color: #000;
   background-color: #f1f1f1;
-}
-
-.card {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  // padding: 0.5rem 1rem;
-  // display: flex;
 }
 
 .map-pin {
@@ -75,7 +98,7 @@ a:hover {
 }
 
 .scroll-up {
-  mix-blend-mode: screen;
+  mix-blend-mode: multiply;
 
   // positioning
   z-index: 2;
@@ -93,14 +116,18 @@ a:hover {
 }
 
 .opaque {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(157, 211, 175, 0.3);
 }
 
 .handwriting {
-  font-family: 'Dancing Script';
+  font-family: 'Mystery Quest';
 }
 
 .text-justify {
   text-align: justify;
   text-justify: auto;
+}
+
+.pink {
+  color: $pink;
 }

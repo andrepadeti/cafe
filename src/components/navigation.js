@@ -3,7 +3,10 @@ import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const Navigation = () => {
   return (
-    <ul className="nav justify-content-center opaque text-white" id="navigation">
+    <ul
+      className="nav justify-content-center opaque text-white"
+      id="navigation"
+    >
       <li className="nav-item cursor-pointer">
         <span
           className="nav-link"

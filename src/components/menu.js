@@ -42,6 +42,9 @@ const Drinks = () => {
 
       <h5>Refrigerante</h5>
       <p>Coca-cola, Sprite, Fanta, etc. 2.50</p>
+
+      <h5>Água</h5>
+      <p>Com ou sem gás 3.00</p>
     </Fade>
   )
 }
@@ -53,35 +56,35 @@ const Menu = () => {
     <>
       <div className="container mb-5" id="menu">
         <div className="row">
-          <div className="col-md-8 mx-auto">
+          <div className="col-11 col-md-8 mx-auto py-2 bg-light rounded shadow">
             <Title text="Menu" />
 
-            <div className="card">
-              <div
-                className="btn-group"
-                role="group"
-                aria-label="Menu Cardápio"
+            {/* <div className=""> */}
+            <div
+              className="btn-group d-flex"
+              role="group"
+              aria-label="Menu Cardápio"
+            >
+              <button
+                type="button"
+                className={`btn ${food ? 'btn-primary text-white' : 'btn-light'}`}
+                aria-pressed="true"
+                onClick={() => setFood(true)}
+                onKeyPress={e => e.value === 'Enter' && setFood(true)}
               >
-                <button
-                  type="button"
-                  className={`btn ${food ? 'btn-secondary' : 'btn-light'}`}
-                  aria-pressed="true"
-                  onClick={() => setFood(true)}
-                  onKeyPress={e => e.value === 'Enter' && setFood(true)}
-                >
-                  Comidas
-                </button>
-                <button
-                  type="button"
-                  className={`btn ${food ? 'btn-light' : 'btn-secondary'}`}
-                  onClick={() => setFood(false)}
-                  onKeyPress={e => e.value === 'Enter' && setFood(false)}
-                >
-                  Bebidas
-                </button>
-              </div>
+                Comidas
+              </button>
+              <button
+                type="button"
+                className={`btn ${food ? 'btn-light' : 'btn-primary text-white'}`}
+                onClick={() => setFood(false)}
+                onKeyPress={e => e.value === 'Enter' && setFood(false)}
+              >
+                Bebidas
+              </button>
             </div>
-            <div className="shadow p-4 mb-5 text-center">
+            {/* </div> */}
+            <div className="p-4 mb-5 text-center">
               {food ? <Food /> : <Drinks />}
             </div>
             <Fade>

@@ -3,6 +3,7 @@ import Zoom from 'react-reveal/Zoom'
 import { useStaticQuery, graphql } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
 import Navigation from './navigation'
+// import Headroom from 'react-headroom'
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
@@ -18,18 +19,24 @@ const Hero = () => {
   `)
 
   return (
-    <BackgroundImage fluid={data.hero.childImageSharp.fluid}>
+    <BackgroundImage fluid={data.hero.childImageSharp.fluid} className='hero-img'>
+      {/* <Headroom> */}
       <Navigation />
-      <div className="hero d-flex justify-content-center justify-content-sm-between mb-5">
-        <div className="hours opaque text-white m-3 align-self-end d-none d-sm-block">
-          Aberto das 6 às 17
+      {/* </Headroom> */}
+      <div className="hero d-flex justify-content-center justify-content-lg-between mb-5">
+        <div className="hours opaque text-white m-3 align-self-end d-none d-lg-block rounded">
+          Terça à Sexta das 12 às 20
+          <br />
+          Sábado e Domingo das 8 às 16
         </div>
-        <div className="title text-white text-center align-self-center">
-          <Zoom>Café</Zoom>
-          <Zoom>Campestre</Zoom>
+        <div className="title handwriting text-white text-center align-self-center opaque px-3 rounded">
+          <Zoom>Soderinni</Zoom>
+          <Zoom>Gourmet</Zoom>
         </div>
-        <div className="address opaque text-white m-3 align-self-end d-none d-sm-block">
-          Rua Vitória Régia, 1300
+        <div className="address opaque text-white m-3 align-self-end d-none d-lg-block rounded">
+          Rua Vitória Régia, 1409
+          <br />
+          Santo André
         </div>
       </div>
     </BackgroundImage>
