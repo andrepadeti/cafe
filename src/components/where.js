@@ -9,7 +9,7 @@ const location = {
 }
 
 const Where = () => {
-  const [zoomLevel, setZoomLevel] = useState()
+  const [zoomLevel, setZoomLevel] = useState(null)
   // in gatsby, window is not defined in production build, therefore:
   useEffect(() => {
     if (typeof window != `undefined`) {
@@ -21,15 +21,17 @@ const Where = () => {
 
   return (
     <>
-      <div className="container" id="where">
-        <div className="row">
-          <div className="col-11 col-md-8 mx-auto py-2 mb-5 bg-light rounded shadow">
-            <Title text="Localização" />
-            <p>No local mais elegante do bairro.</p>
-            <Map location={location} zoomLevel={zoomLevel} />
+      {zoomLevel && (
+        <div className="container" id="where">
+          <div className="row">
+            <div className="col-11 col-md-8 mx-auto py-2 mb-5 bg-light rounded shadow">
+              <Title text="Localização" />
+              <p>No local mais elegante do bairro.</p>
+              <Map location={location} zoomLevel={zoomLevel} />
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </>
   )
 }

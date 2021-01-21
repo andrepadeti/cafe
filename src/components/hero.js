@@ -19,7 +19,10 @@ const Hero = () => {
   `)
 
   return (
-    <BackgroundImage fluid={data.hero.childImageSharp.fluid} className='hero-img'>
+    <BackgroundImage
+      fluid={data.hero.childImageSharp.fluid}
+      className="hero-img"
+    >
       {/* <Headroom> */}
       <Navigation />
       {/* </Headroom> */}
