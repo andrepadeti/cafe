@@ -1,0 +1,45 @@
+$green: hsl(138, 68%, 95%);
+$dark-green: hsl(139, 86%, 6%);
+$opaque: hsla(140, 95%, 8%, 0.2);
+$pink: hsl(350, 30%, 59%);
+
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
+
+$custom-colors: (
+  'background': $green,
+  'footer': $dark-green,
+);
+
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 12,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: 0.875rem,
+);
+
+$font-family-sans-serif: 'Inter', sans-serif, system-ui;
+$font-weight-base: $font-weight-light;
+// same hue as the color theme but darker (avoid black!):
+$body-color: $dark-green;
+$body-bg: $green;
+
+@import 'bootstrap/scss/bootstrap.scss';

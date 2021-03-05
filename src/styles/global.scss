@@ -1,17 +1,30 @@
 @charset "utf-8";
-@import "bootstrap/scss/bootstrap.scss";
+@import 'custom-bootstrap';
 
-$green: rgb(157, 211, 175);
-$dark-green: #285a6c;
-$pink: #d89292;
+$green: hsl(138, 68%, 95%);
+$dark-green: hsl(139, 86%, 6%);
+$opaque: hsla(140, 95%, 8%, 0.2);
+$pink: hsl(350, 30%, 59%);
 
 $mynewcolor: $dark-green;
 .btn-primary {
-  @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+  @include button-variant(
+    $mynewcolor,
+    darken($mynewcolor, 7.5%),
+    darken($mynewcolor, 10%),
+    lighten($mynewcolor, 10%),
+    lighten($mynewcolor, 20%),
+    darken($mynewcolor, 30%)
+  );
 }
 
 .btn-outline-primary {
-  @include button-outline-variant($mynewcolor, #222222, lighten($mynewcolor,5%), $mynewcolor);
+  @include button-outline-variant(
+    $mynewcolor,
+    #222222,
+    lighten($mynewcolor, 5%),
+    $mynewcolor
+  );
 }
 
 .bg-green {
@@ -22,25 +35,23 @@ $mynewcolor: $dark-green;
   background-color: $dark-green;
 }
 
-body {
-  background-color: $green;
-}
-
 a {
   cursor: pointer;
   color: inherit;
-  text-decoration: none;
+  // text-decoration: none;
 }
 
 a:hover {
-  color: grey;
+  color: $dark-green;
 }
 
+
 .nav-item:hover {
-  color: grey;
+  color: $dark-green;
 }
 
 .hero {
+  background-color: $opaque;
   background-position: center;
   background-size: cover;
   height: max(150px, 90vh);
@@ -116,11 +127,12 @@ a:hover {
 }
 
 .opaque {
-  background-color: rgba(157, 211, 175, 0.3);
+  background-color: $opaque;
 }
 
 .handwriting {
-  font-family: 'Mystery Quest';
+  font-family: 'Dancing Script';
+  // font-weight: 700;
 }
 
 .text-justify {
@@ -131,3 +143,4 @@ a:hover {
 .pink {
   color: $pink;
 }
+

@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Title from './title'
 import Fade from 'react-reveal/Fade'
 import Carousel from './carousel'
+import Container from './container'
 
 const Food = () => {
   return (
@@ -54,45 +55,40 @@ const Menu = () => {
 
   return (
     <>
-      <div className="container mb-5" id="menu">
-        <div className="row">
-          <div className="col-11 col-md-8 mx-auto py-2 bg-light rounded shadow">
-            <Title text="Menu" />
+      <Container id="menu">
+        <Title text="Menu" />
 
-            {/* <div className=""> */}
-            <div
-              className="btn-group d-flex"
-              role="group"
-              aria-label="Menu Cardápio"
-            >
-              <button
-                type="button"
-                className={`btn ${food ? 'btn-primary text-white' : 'btn-light'}`}
-                aria-pressed="true"
-                onClick={() => setFood(true)}
-                onKeyPress={e => e.value === 'Enter' && setFood(true)}
-              >
-                Comidas
-              </button>
-              <button
-                type="button"
-                className={`btn ${food ? 'btn-light' : 'btn-primary text-white'}`}
-                onClick={() => setFood(false)}
-                onKeyPress={e => e.value === 'Enter' && setFood(false)}
-              >
-                Bebidas
-              </button>
-            </div>
-            {/* </div> */}
-            <div className="p-4 mb-5 text-center">
-              {food ? <Food /> : <Drinks />}
-            </div>
-            <Fade>
-              <Carousel />
-            </Fade>
-          </div>
+        <div
+          className="btn-group d-flex"
+          role="group"
+          aria-label="Menu Cardápio"
+        >
+          <button
+            type="button"
+            className={`btn ${food ? 'btn-primary text-white' : 'btn-background'}`}
+            aria-pressed="true"
+            onClick={() => setFood(true)}
+            onKeyPress={e => e.value === 'Enter' && setFood(true)}
+          >
+            Comidas
+          </button>
+          <button
+            type="button"
+            className={`btn ${food ? 'btn-background' : 'btn-primary text-white'}`}
+            onClick={() => setFood(false)}
+            onKeyPress={e => e.value === 'Enter' && setFood(false)}
+          >
+            Bebidas
+          </button>
         </div>
-      </div>
+        <div className="p-4 mb-5 text-center">
+          {food ? <Food /> : <Drinks />}
+        </div>
+
+        <Fade>
+          <Carousel />
+        </Fade>
+      </Container>
     </>
   )
 }

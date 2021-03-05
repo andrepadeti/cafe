@@ -5,8 +5,8 @@ require('dotenv').config({
 module.exports = {
   // pathPrefix: `/www.padeti.com.br`,
   siteMetadata: {
-    title: `Soderinni Gourmet`,
-    description: `Festas | Corporativos | Aniversários | Casamentos | Almoços | Jantares | Finger Food | Coffee Break | Doces Finos | Bem Casados | Gifts para Eventos`,
+    title: `Café Campestre`,
+    description: `O melhor café da cidade.`,
     author: `André Padeti`,
   },
 
@@ -42,11 +42,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `dancing script`,
-          `mystery quest`,
-          `griffy`,
-          `lato`,
-          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+          `dancing script\:500,600,700`,
+          `inter`,
         ],
         display: 'swap',
       },

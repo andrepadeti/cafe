@@ -26,20 +26,22 @@ const Hero = () => {
       {/* <Headroom> */}
       <Navigation />
       {/* </Headroom> */}
-      <div className="hero d-flex justify-content-center justify-content-lg-between mb-5">
-        <div className="hours opaque text-white m-3 align-self-end d-none d-lg-block rounded">
-          Terça à Sexta das 12 às 20
-          <br />
-          Sábado e Domingo das 8 às 16
-        </div>
-        <div className="title handwriting text-white text-center align-self-center opaque px-3 rounded">
-          <Zoom>Soderinni</Zoom>
-          <Zoom>Gourmet</Zoom>
-        </div>
-        <div className="address opaque text-white m-3 align-self-end d-none d-lg-block rounded">
-          Rua Vitória Régia, 1409
-          <br />
-          Santo André
+      <div className="hero mb-5">
+        <div className="d-flex justify-content-center justify-content-lg-between h-100">
+          <div className="hours opaque text-white m-3 align-self-end d-none d-lg-block rounded">
+            Terça à Sexta das 12 às 20
+            <br />
+            Sábado e Domingo das 8 às 16
+          </div>
+          <div className="title handwriting text-white text-center align-self-center opaque px-3 rounded">
+            <Zoom>Café</Zoom>
+            <Zoom>Campestre</Zoom>
+          </div>
+          <div className="address opaque text-white m-3 align-self-end d-none d-lg-block rounded">
+            Rua Vitória Régia, 1409
+            <br />
+            Santo André
+          </div>
         </div>
       </div>
     </BackgroundImage>

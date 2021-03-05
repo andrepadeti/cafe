@@ -3,16 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => {
   return (
-    <footer className="container-fluid ">
+    <footer className="container-fluid">
       <div className="row py-3 px-5 justify-content-center align-items-center bg-dark-green text-white border-bottom">
         <div className="col-md-4 col-sm-12 text-center text-md-left mb-4 mb-md-0">
           <h5 className="mb-0">Siga-nos nas mídias sociais!</h5>
         </div>
         <div className="col-md-4 col-sm-12 text-center text-md-left pl-md-5">
-          <a href="https://www.facebook.com/soderinnigourmet" className="mr-4">
+          <a href="https://www.facebook.com/" className="mr-4">
             <FontAwesomeIcon icon={['fab', 'facebook']} size="3x" />
           </a>
-          <a href="https://www.instagram.com/soderinnigourmet">
+          <a href="https://www.instagram.com/">
             <FontAwesomeIcon icon={['fab', 'instagram']} size="3x" />
           </a>
         </div>
@@ -20,7 +20,7 @@ const Footer = () => {
 
       <div className="row pt-3 bg-dark-green text-white justify-content-center border-bottom">
         <div className="col-md-4 col-sm-12 pl-5 mb-4 mb-md-0">
-          <h5 className="handwriting">Soderinni Gourmet</h5>
+          <h5 className="handwriting">Café Campestre</h5>
           <hr style={{ width: '60px' }} />
           <p>O melhor café da cidade bem pertinho de você.</p>
         </div>
@@ -35,12 +35,12 @@ const Footer = () => {
           <p>
             <a href="mailto:cafe@gmail.com" style={{}}>
               <FontAwesomeIcon icon={['fa', 'envelope']} className="mr-2" />
-              soderinni.gourmet@gmail.com
+              cafe@gmail.com
             </a>
           </p>
           <p>
             <FontAwesomeIcon icon={['fab', 'whatsapp']} className="mr-2" />
-            (11) 99873.4938
+            (11) 99444.3322
           </p>
         </div>
       </div>

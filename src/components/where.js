@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Map from './map'
 import Title from './title'
+import Container from './container'
 
 const location = {
-  text: 'Soderinni Gourmet',
+  text: 'Café Campestre',
   lat: -23.631975801212228,
   lng: -46.54757678944422,
 }
@@ -22,15 +23,11 @@ const Where = () => {
   return (
     <>
       {zoomLevel && (
-        <div className="container" id="where">
-          <div className="row">
-            <div className="col-11 col-md-8 mx-auto py-2 mb-5 bg-light rounded shadow">
-              <Title text="Localização" />
-              <p>No local mais elegante do bairro.</p>
-              <Map location={location} zoomLevel={zoomLevel} />
-            </div>
-          </div>
-        </div>
+        <Container id='where'>
+          <Title text="Localização" />
+          <p>No local mais elegante do bairro.</p>
+          <Map location={location} zoomLevel={zoomLevel} />
+        </Container>
       )}
     </>
   )
