@@ -47,11 +47,11 @@ const About = () => {
       <Fade>
         <Img fluid={data.about.childImageSharp.fluid} className="mb-3" />
       </Fade>
-      <p className='fs-7'>
-        <span className='fw-bold'>Nosso horário:</span> terça à domigo das 10h às 20h, sábado e
-        domingo das 8h às 16h.
+      <p className="fs-7">
+        <span className="fw-bold">Nosso horário:</span> terça à domigo das 10h
+        às 20h, sábado e domingo das 8h às 16h.
         <br />
-        <span className='fw-bold'>Endereço:</span> Vitória Régia, 1409.
+        <span className="fw-bold">Endereço:</span> Vitória Régia, 402.
       </p>
     </Container>
   )

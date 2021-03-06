@@ -43,7 +43,7 @@ const Home = () => {
     <>
       <SEO
         title="Home"
-        description="Festas | Corporativos | Aniversários | Casamentos | Almoços | Jantares | Finger Food | Coffee Break | Doces Finos | Bem Casados | Gifts para Eventos"
+        description="O melhor café da cidade!"
       />
       <Fade>
         <Hero /> {/*includes navigation bar*/}

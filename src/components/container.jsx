@@ -4,7 +4,7 @@ const Container = ({children, id}) => {
   return (
     <div className="container mb-5" id={id}>
       <div className="row">
-        <div className="col-11 col-md-8 mx-auto p-3 p-md-4 bg-light rounded shadow">
+        <div className="col-11 col-md-8 mx-auto p-3 p-md-5 bg-light rounded shadow">
           {children}
         </div>
       </div>

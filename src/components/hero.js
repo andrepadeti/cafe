@@ -38,7 +38,7 @@ const Hero = () => {
             <Zoom>Campestre</Zoom>
           </div>
           <div className="address opaque text-white m-3 align-self-end d-none d-lg-block rounded">
-            Rua Vitória Régia, 1409
+            Rua Vitória Régia, 402
             <br />
             Santo André
           </div>

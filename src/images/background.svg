@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <path style="fill: rgba(216, 216, 216, 0); stroke-width: 4px; stroke-miterlimit: 5; paint-order: fill; stroke: hsla(138, 19%, 55%, 0.3);" d="M 1.876 1000 A 497.243 497.243 0 0 0 499.062 510.319 A 516.476 516.476 0 0 1 1001.876 1.876"/>
+  <path style="stroke: hsla(138, 19%, 55%, 0.3); fill: rgba(216, 216, 216, 0); stroke-miterlimit: 5; stroke-width: 4px;" d="M 0 500 C 392.364 500 762.228 684.931 1000 1000"/>
+  <path style="stroke: hsla(138, 19%, 55%, 0.3); fill: rgba(216, 216, 216, 0); stroke-width: 4px;" d="M 0 -3.65 C 406.112 -3.65 784.327 185.458 1000 496.35" transform="matrix(-1, 0, 0, -1, 1000, 496.35)" bx:origin="0.5 0.50365"/>
+</svg>

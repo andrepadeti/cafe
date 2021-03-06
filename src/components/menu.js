@@ -65,7 +65,10 @@ const Menu = () => {
         >
           <button
             type="button"
-            className={`btn ${food ? 'btn-primary text-white' : 'btn-background'}`}
+            // className={`btn btn-button text-white`}
+            className={`btn ${
+              food ? 'btn-button text-white' : 'btn-outline-button'
+            }`}
             aria-pressed="true"
             onClick={() => setFood(true)}
             onKeyPress={e => e.value === 'Enter' && setFood(true)}
@@ -74,7 +77,10 @@ const Menu = () => {
           </button>
           <button
             type="button"
-            className={`btn ${food ? 'btn-background' : 'btn-primary text-white'}`}
+            // className={`btn btn-button text-white`}
+            className={`btn ${
+              food ? 'btn-outline-button' : 'btn-button text-white'
+            }`}
             onClick={() => setFood(false)}
             onKeyPress={e => e.value === 'Enter' && setFood(false)}
           >

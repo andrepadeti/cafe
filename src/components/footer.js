@@ -30,7 +30,7 @@ const Footer = () => {
           <hr style={{ width: '60px' }} />
           <p>
             <FontAwesomeIcon icon={['fa', 'building']} className="mr-2" />
-            Rua Vitória Régia, 1409 - Santo André
+            Rua Vitória Régia, 402 - Santo André
           </p>
           <p>
             <a href="mailto:cafe@gmail.com" style={{}}>

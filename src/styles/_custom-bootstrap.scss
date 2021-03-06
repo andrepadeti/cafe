@@ -1,7 +1,8 @@
 $green: hsl(138, 68%, 95%);
+$button: hsl(138, 19%, 55%);
 $dark-green: hsl(139, 86%, 6%);
 $opaque: hsla(140, 95%, 8%, 0.2);
-$pink: hsl(350, 30%, 59%);
+$pink: hsl(350, 33%, 39%);
 
 @import 'node_modules/bootstrap/scss/functions';
 @import 'node_modules/bootstrap/scss/variables';
@@ -11,6 +12,7 @@ $pink: hsl(350, 30%, 59%);
 $custom-colors: (
   'background': $green,
   'footer': $dark-green,
+  'button': $button 
 );
 
 $spacers: (

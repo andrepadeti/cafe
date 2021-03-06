@@ -1,30 +1,9 @@
 @charset "utf-8";
 @import 'custom-bootstrap';
 
-$green: hsl(138, 68%, 95%);
-$dark-green: hsl(139, 86%, 6%);
-$opaque: hsla(140, 95%, 8%, 0.2);
-$pink: hsl(350, 30%, 59%);
-
-$mynewcolor: $dark-green;
-.btn-primary {
-  @include button-variant(
-    $mynewcolor,
-    darken($mynewcolor, 7.5%),
-    darken($mynewcolor, 10%),
-    lighten($mynewcolor, 10%),
-    lighten($mynewcolor, 20%),
-    darken($mynewcolor, 30%)
-  );
-}
-
-.btn-outline-primary {
-  @include button-outline-variant(
-    $mynewcolor,
-    #222222,
-    lighten($mynewcolor, 5%),
-    $mynewcolor
-  );
+body {
+  background-image: url('../images/background.svg');
+  background-size: 150px 150px;
 }
 
 .bg-green {
@@ -45,6 +24,11 @@ a:hover {
   color: $dark-green;
 }
 
+@include media-breakpoint-up(md) {
+  .nav {
+    font-size: 1.7rem;
+  }
+}
 
 .nav-item:hover {
   color: $dark-green;
@@ -105,7 +89,7 @@ a:hover {
 
 .map-pin {
   font-size: 1rem;
-  color: red;
+  color: $pink;
 }
 
 .scroll-up {
@@ -144,3 +128,9 @@ a:hover {
   color: $pink;
 }
 
+.border-cafe {
+  border: 30px solid $green;
+  border-image-source: url('../images/border.svg');
+  border-image-slice: 60;
+  border-image-repeat: round;
+}

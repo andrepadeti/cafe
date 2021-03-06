@@ -5,8 +5,8 @@ import Container from './container'
 
 const location = {
   text: 'Café Campestre',
-  lat: -23.631975801212228,
-  lng: -46.54757678944422,
+  lat: -23.6400355,
+  lng: -46.5426063,
 }
 
 const Where = () => {
@@ -23,7 +23,7 @@ const Where = () => {
   return (
     <>
       {zoomLevel && (
-        <Container id='where'>
+        <Container id="where">
           <Title text="Localização" />
           <p>No local mais elegante do bairro.</p>
           <Map location={location} zoomLevel={zoomLevel} />
