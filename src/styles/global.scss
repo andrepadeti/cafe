@@ -6,6 +6,14 @@ body {
   background-size: 150px 150px;
 }
 
+a {
+  color: $green;
+
+  &:hover {
+    color: $button;
+  }
+}
+
 .bg-green {
   background-color: $green;
 }
@@ -14,42 +22,41 @@ body {
   background-color: $dark-green;
 }
 
-a {
+.nav-link {
   cursor: pointer;
   color: inherit;
-  // text-decoration: none;
 }
 
-a:hover {
-  color: $dark-green;
+.nav-link:hover {
+  color: $gray-100;
+  text-decoration: underline $gray-400;
 }
 
-.navigation {
-  position: absolute;
-  top: 0;
-}
+.nav {
+  color: $gray-400;
+  font-size: 1rem;
 
-@include media-breakpoint-up(md) {
-  .nav {
-    font-size: 1.7rem;
+  @include media-breakpoint-up(md) {
+    font-size: 1.4rem;
   }
-}
-
-.nav-item:hover {
-  color: $dark-green;
 }
 
 .hero {
   background-color: $opaque;
   background-position: center;
   background-size: cover;
-  height: max(150px, 90vh);
+}
+
+@mixin clipPath($shape) {
+  clip-path: $shape;
+  webkit-clip-path: $shape;
 }
 
 .hero__bg-img {
-  height: max(150px, 90vh);
-  margin-bottom: 3rem;
-  // background-blend-mode: darken;
+  position: relative;
+  margin-bottom: -5rem;
+  height: max(450px, 90vh);
+  @include clipPath(polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vh)))
 }
 
 .hero__hours {
@@ -61,10 +68,12 @@ a:hover {
 }
 
 .hero__title {
-  // position: absolute;
-  // top: 30%;
-  // margin: auto;
-  font-size: min(max(1rem, 20vw), 120px);
+  font-size: min(max(1rem, 15vw), 120px);
+}
+
+.hero__title-img {
+  width: max(80px, 10vw);
+  height: max(80px, 10vw);
 }
 
 .hero__address {
@@ -75,20 +84,12 @@ a:hover {
   padding: 0.2rem 0.8rem;
 }
 
-@media (max-width: 577px) {
-  .hero {
-    height: max(150px, 60vh);
-  }
+.google-map {
+  height: 40vh;
+  width: 100%;
+  margin-bottom: 1rem;
 
-  .google-map {
-    height: 40vh;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-}
-
-@media (min-width: 576px) {
-  .google-map {
+  @include media-breakpoint-up(sm) {
     height: 70vh;
     width: 100%;
     margin-bottom: 1rem;

@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <div className="position-absolute top-0">
       <ul
-        className="nav justify-content-center text-white py-3"
+        className="nav justify-content-center pt-3"
         id="navigation"
       >
         <li className="nav-item cursor-pointer">

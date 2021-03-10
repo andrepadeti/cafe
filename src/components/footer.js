@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Footer = () => {
   return (
     <footer className="container-fluid">
-      <div className="row py-3 px-5 justify-content-center align-items-center bg-dark-green text-white border-bottom">
+      <div className="row py-3 px-5 justify-content-center align-items-center bg-footer text-white border-bottom">
         <div className="col-md-4 col-sm-12 text-center text-md-left mb-4 mb-md-0">
           <h5 className="mb-0">Siga-nos nas mídias sociais!</h5>
         </div>
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="row pt-3 bg-dark-green text-white justify-content-center border-bottom">
+      <div className="row pt-3 bg-footer text-green justify-content-center border-bottom">
         <div className="col-md-4 col-sm-12 pl-5 mb-4 mb-md-0">
           <h5 className="handwriting">Café Campestre</h5>
           <hr style={{ width: '60px' }} />
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="row py-3 bg-dark-green text-white">
+      <div className="row py-3 bg-footer text-white">
         <div className="column d-flex justify-content-center">
           <div>
             Copyright &#169; {new Date().getFullYear()}
