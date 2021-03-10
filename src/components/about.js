@@ -40,7 +40,7 @@ const About = () => {
             <em>"Todos os produtos do nosso café são produzidos aqui."</em>
           </p>
           <footer className="blockquote-footer text-center">
-            <cite>Pedro Magno.</cite> Especialista em café.
+            <cite>Lucas Magno.</cite> Especialista em café.
           </footer>
         </blockquote>
       </div>

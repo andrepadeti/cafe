@@ -24,6 +24,11 @@ a:hover {
   color: $dark-green;
 }
 
+.navigation {
+  position: absolute;
+  top: 0;
+}
+
 @include media-breakpoint-up(md) {
   .nav {
     font-size: 1.7rem;
@@ -41,22 +46,31 @@ a:hover {
   height: max(150px, 90vh);
 }
 
-.hero-img {
-  // height: max(150px, 90vh);
-  background-blend-mode: darken;
+.hero__bg-img {
+  height: max(150px, 90vh);
+  margin-bottom: 3rem;
+  // background-blend-mode: darken;
 }
 
-.hours {
+.hero__hours {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   font-size: min(max(0.5rem, 1.5vw), 1rem);
   padding: 0.2rem 0.8rem;
 }
 
-.title {
+.hero__title {
+  // position: absolute;
+  // top: 30%;
+  // margin: auto;
   font-size: min(max(1rem, 20vw), 120px);
-  // font-size: min(min(30vh, 30vw), 120px);
 }
 
-.address {
+.hero__address {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   font-size: min(max(0.5rem, 1.5vw), 1rem);
   padding: 0.2rem 0.8rem;
 }

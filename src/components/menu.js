@@ -13,6 +13,9 @@ const Food = () => {
 
       <h5>Granola</h5>
       <p>Granola com mel, amendoas e frutas 7.00</p>
+      
+      <h5>Biscoitinhos</h5>
+      <p>Biscoitos <span className="fst-italic">digestives</span> estilo inglês com cobertura de chocolate 12.30</p>
 
       <h5>Waffle</h5>
       <p>Waffle de baunilha com farinha maltada 7.50</p>
@@ -87,7 +90,7 @@ const Menu = () => {
             Bebidas
           </button>
         </div>
-        <div className="p-4 mb-5 text-center">
+        <div className={`p-4 mb-5 text-center`}>
           {food ? <Food /> : <Drinks />}
         </div>
 
